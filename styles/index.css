@@ -1,0 +1,188 @@
+/* Création de variables css pour les couleurs de mon site */
+:root {
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --primary-color: tan;
+    --text-dark: #1a1a1a;
+    --text-light: #777;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: var(--card-bg);
+}
+
+.logo span { color: var(--primary-color); font-weight: bold; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover { color: var(--primary-color); }
+
+.menu-toggle{
+    display: cursor;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+.nav-link{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease; /* animation fluide */
+    z-index: 1000;
+}
+
+.nav-link.active{
+    right: 0; /* glisse vers l'intérieur */
+}
+
+.nav-link a{
+    font-size: 2rem;
+    margin: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.hero-card {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 40px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    align-items: center;
+}
+
+.avatar-box {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.avatar-box img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+}
+
+.specialty {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ccc;
+    letter-spacing: 2px;
+}
+
+.name {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.tagline {
+    font-size: 18px;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(85, 104, 255, 0.3);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.social-links{
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: var(--primary-color) 0.3 ;
+}
+
+.social-links a:hover{
+    color:var(--primary-color) ;
+}
+
+@media all and (max-width: 1200px) {
+    .hero-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 30px;
+    }
+    .nav-links { display: none; } 
+    .footer-content{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+}

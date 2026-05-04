@@ -1,0 +1,39 @@
+:root {
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --primary-color: tan;
+    --text-dark: #1a1a1a;
+    --text-light: #777;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: var(--card-bg);
+}
+
+.logo span { color: var(--primary-color); font-weight: bold; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover { color: var(--primary-color); }
