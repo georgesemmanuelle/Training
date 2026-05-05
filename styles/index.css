@@ -105,7 +105,6 @@ body {
 .avatar-box img {
     width: 100%;
     display: block;
-    filter: grayscale(100%);
 }
 
 .specialty {
