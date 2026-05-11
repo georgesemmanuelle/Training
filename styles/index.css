@@ -39,13 +39,6 @@ body {
 
 .nav-links li a:hover { color: var(--primary-color); }
 
-.menu-toggle{
-    display: cursor;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
 .bar{
     width: 25px;
     height: 3px;

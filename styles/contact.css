@@ -5,7 +5,7 @@
     --text-dark: #1a1a1a;
     --text-light: #777;
     --label-gris: #b0b0b0;
-    --icon-bg:  #ffffff;
+    --icon-bg:  tan;
 }
 
 body {
@@ -134,4 +134,62 @@ h2 {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.section-contact h2 {
+  color: tan;
+  text-align: center;
+  margin-bottom: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  color: saddlebrown;
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(85, 104, 255, 0.3);
 }
