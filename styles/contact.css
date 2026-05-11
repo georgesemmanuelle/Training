@@ -5,7 +5,7 @@
     --text-dark: #1a1a1a;
     --text-light: #777;
     --label-gris: #b0b0b0;
-    --icon-bg:  tan;
+    --icon-bg: tan;
 }
 
 body {
@@ -23,7 +23,10 @@ body {
     background: var(--card-bg);
 }
 
-.logo span { color: var(--primary-color); font-weight: bold; }
+.logo span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
 
 .nav-links {
     display: flex;
@@ -38,36 +41,38 @@ body {
     transition: 0.3s;
 }
 
-.nav-links li a:hover { color: var(--primary-color); }
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     text-align: center;
 }
 
-.social-links{
+.social-links {
     display: flex;
     gap: 20px;
 }
 
-.social-links a{
+.social-links a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    transition: var(--primary-color) 0.3 ;
+    transition: var(--primary-color) 0.3;
 }
 
-.social-links a:hover{
-    color:var(--primary-color) ;
+.social-links a:hover {
+    color: var(--primary-color);
 }
 
 .contact-container {
@@ -98,7 +103,7 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
 }
 
 .label {
@@ -109,7 +114,8 @@ h2 {
     margin-bottom: 5px;
 }
 
-.text-content p, address {
+.text-content p,
+address {
     margin: 0;
     color: #555;
     line-height: 1.5;
@@ -133,50 +139,51 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
 }
 
 .section-contact h2 {
-  color: tan;
-  text-align: center;
-  margin-bottom: 50px;
+    color: tan;
+    text-align: center;
+    margin-bottom: 50px;
 }
+
 form {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin: auto;
-  color: saddlebrown;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    color: saddlebrown;
 }
 
 .form-nom-email {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .form-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 input,
 textarea {
-  padding: 15px;
-  border-radius: 3px;
-  border: none;
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
 }
 
 label {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 input[type='submit'] {
-  width: 200px;
-  margin: auto;
-  margin-top: 30px;
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .cta-button {
@@ -192,4 +199,8 @@ input[type='submit'] {
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(85, 104, 255, 0.3);
+}
+
+img {
+    border-radius: 8px;
 }

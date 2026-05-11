@@ -4,7 +4,6 @@
     --primary-color: tan;
     --text-dark: #1a1a1a;
     --text-light: #777;
-    --primary: #3b82f6;
     --dark: #1e293b;
     --light: #f8fafc;
     --gray: #64748b;
@@ -25,7 +24,10 @@ body {
     background: var(--card-bg);
 }
 
-.logo span { color: var(--primary-color); font-weight: bold; }
+.logo span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
 
 .nav-links {
     display: flex;
@@ -40,36 +42,38 @@ body {
     transition: 0.3s;
 }
 
-.nav-links li a:hover { color: var(--primary-color); }
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     text-align: center;
 }
 
-.social-links{
+.social-links {
     display: flex;
     gap: 20px;
 }
 
-.social-links a{
+.social-links a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    transition: var(--primary-color) 0.3 ;
+    transition: var(--primary-color) 0.3;
 }
 
-.social-links a:hover{
-    color:var(--primary-color) ;
+.social-links a:hover {
+    color: var(--primary-color);
 }
 
 .container {
@@ -105,7 +109,7 @@ body {
 
 .project-image img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     display: block;
 }
@@ -125,15 +129,15 @@ body {
     margin-bottom: 20px;
 }
 
-.tech-stack {
+.use {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-.tech-stack span {
+.use span {
     background: #eff6ff;
-    color: var(--primary);
+    color: var(--primary-color);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -153,4 +157,12 @@ body {
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(85, 104, 255, 0.3);
+}
+
+.button-projet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
 }
