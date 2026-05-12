@@ -156,3 +156,24 @@ body {
     width: 100%;
     padding: 20px;
 }
+
+.btn-download{
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    background-color: #ccc;
+}
+
+.btn-download:hover{
+    background-color: #ccc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(85, 104, 255, 0.3);
+}
+
+.cv-section{
+    padding-left: 30px;;
+}
